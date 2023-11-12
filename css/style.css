@@ -43,6 +43,7 @@ nav ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 160px;
 }
 
 #header .content{
@@ -98,6 +99,7 @@ nav ul{
     align-self: center;
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
 }
 
 .bikes_pictures{
@@ -113,9 +115,48 @@ nav ul{
     align-items: center;
     justify-items: center;
 }
+
+.info h3{
+    font-size: 25px;
+    color: orange;
+}
+
 .info p{
     width: 70%;
     text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.info img:hover{
+    border: 2px solid orange;
+    border-radius: 15px;
+}
+
+#about_us h1{
+    font-size: 35px;
+}
+
+#bike_video{
+    color: #fff;
+}
+
+#bike_video h1{
+    margin-top: -100px;
+    margin-bottom: 10px;
+}
+
+#bike_video img{
+    margin-top: 50px;
+}
+
+
+.video_background{
+    z-index: -5;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    background-color: orange;
 }
 
 footer{
