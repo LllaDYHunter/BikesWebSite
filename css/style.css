@@ -7,10 +7,22 @@
     width: 100px;
 }
 
+html{
+    min-width: 837px;
+}
+
 body{
     display: flex;
     flex-direction: column;
     max-width: 1920px;
+}
+
+#divider{
+    width: 70%;
+    align-self: center;
+    position: relative;
+    background-color: #fff;
+    height: 1px;
 }
 
 #header{
@@ -31,6 +43,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     list-style: none;
+    font-size: 20px;
 }
 
 .navigation_element{
@@ -114,6 +127,8 @@ nav ul{
     margin-right: 20px;
     align-items: center;
     justify-items: center;
+    height: max-content;
+    max-height: max-content;
 }
 
 .info h3{
@@ -128,6 +143,10 @@ nav ul{
     margin-top: 15px;
 }
 
+.info img{
+    border: 2px solid transparent;
+}
+
 .info img:hover{
     border: 2px solid orange;
     border-radius: 15px;
@@ -138,6 +157,7 @@ nav ul{
 }
 
 #bike_video{
+    margin-top: 10px;
     color: #fff;
 }
 
@@ -168,6 +188,32 @@ footer{
     align-self: center;
 }
 
+#bike_types{
+    position: static;
+    margin-bottom: 50px;
+}
+
 footer *{
     position: relative;
+}
+
+footer{
+    margin-top: 50px;
+}
+
+#footer_email_info, #footer_phone_info{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+#how_to_find_us h1, #how_to_find_us p{
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+#how_to_find_us p{
+    margin-bottom: 50px;
+    font-size: 20px;
 }
