@@ -3,8 +3,8 @@
     padding: 0;
 }
 
-.left_flex_content img{
-    width: 100px;
+.left_flex_content {
+    height: 403px;
 }
 
 body{
@@ -13,22 +13,14 @@ body{
     max-width: 1920px;
 }
 
-#divider{
-    width: 70%;
-    align-self: center;
-    position: relative;
-    background-color: #fff;
-    height: 1px;
-}
-
 #header{
     background-repeat:no-repeat;
-    background-size: 100vw;
+    background-size: 120vw 403px;
     background-image: url("../img/Img_Bike.png");
-    height: 829px;
     display: flex;
     flex-direction: column;
-    color: #fff;
+    color: #000;
+    height: 700px;
 }
 nav{
     position: relative;
@@ -56,8 +48,15 @@ nav ul{
 }
 
 #header .content{
-    flex-direction: row;
-    margin-top: 15%;
+    margin-top: 0;
+}
+
+
+#company_logo{
+    align-self:center;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 #header .content p{
@@ -92,28 +91,29 @@ nav ul{
 
 .right_flex_content input{
     margin-top: 15px;
-    height: 50px;
-    border-radius: 15px;
-    width: 320px;
-    border-style: none;
+    height: 35px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 250px;
     color: #000;
 }
 
 .btn{
     background-color: orange;
+    border:none;
 }
 
 
 .info_wrapper{
     align-self: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 50px;
 }
 
 .bikes_pictures{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .info{
@@ -125,6 +125,10 @@ nav ul{
     justify-items: center;
     height: max-content;
     max-height: max-content;
+}
+
+.bikes_pictures .info img{
+    height: 308px;
 }
 
 .info h3{
@@ -149,7 +153,7 @@ nav ul{
 }
 
 #about_us h1{
-    font-size: 35px;
+    font-size: 27px;
 }
 
 #bike_video{
@@ -164,13 +168,14 @@ nav ul{
 
 #bike_video img{
     margin-top: 50px;
+    width: 270px;
 }
 
 
 .video_background{
     z-index: -5;
     position: absolute;
-    height: 70%;
+    height: 30%;
     width: 100%;
     background-color: orange;
 }
@@ -198,18 +203,19 @@ footer{
 }
 
 #footer_email_info, #footer_phone_info{
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     flex-direction: row;
+    font-size: 13px;
 }
 
 #how_to_find_us h1, #how_to_find_us p{
     margin-top: 50px;
-    font-size: 35px;
+    font-size: 20px;
 }
 
 #how_to_find_us p{
     margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 15px;
 }
